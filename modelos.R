@@ -1,4 +1,13 @@
-# Modelos y resultados
+# ============================================================
+# Estimación de modelos y generación de resultados.
+#
+# Este script corre los modelos:
+#   - OLS
+#   - Diferencias en Diferencias 
+#
+# Algunas de las tablas fueron modificadas posteriormente para mejorar el formato y la legibilidad, pero no se modificó el contenido sustantivo.
+# ============================================================
+
 # Librerias necesarias
 library(fixest)
 library(dplyr)
@@ -445,4 +454,5 @@ modelsummary(
   gof_omit = 'RMSE|Log.Lik|F|Within|R2 Pseudo',  # hide unnecessary GOF
   notes = "Errores estándar robustos de Newey-West con 2 rezagos entre paréntesis. + $p<0.1$, * $p<0.05$, ** $p<0.01$, *** $p<0.001$"
 )
+
 
