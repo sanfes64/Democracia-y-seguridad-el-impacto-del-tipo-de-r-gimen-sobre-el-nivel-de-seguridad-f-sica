@@ -1,5 +1,17 @@
-# Creación de la base de datos. 
-# En caso de utilizar los índices creados por MCMC se debe remplazar la importación de V-Dem por el output de polyarchy_rep
+# ============================================================
+# Creación de la base de datos principal del panel.
+#
+# Este script construye la base matriz que se utiliza en todo el análisis.
+# Incluye la importación de V-Dem y GBD, la selección de las variables relevantes,
+# la armonización de nombres de países y años, y la unificación de estructuras.
+#
+# Existen dos caminos posibles:
+#   (1) Camino estándar: utiliza directamente los datos originales de V-Dem.
+#   (2) Camino opcional: si se replican y ajustan los índices mediante MCMC,
+#       se debe reemplazar la importación de V-Dem por el output generado
+#       en polyarchy_rep.R (índice de democracia electoral modificado).
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(summarytools)
@@ -108,3 +120,4 @@ attr(vdem_ihme$incidence, "label") <- "% cada 100.000 habitantes"
 # Se guarda la base
 
 write.csv(vdem_ihme, "vdem_ihme.csv", row.names = FALSE)
+
