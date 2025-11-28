@@ -1,4 +1,13 @@
-# Creación del índice de democracia electoral modificado para evitar problemas de circularidad
+# ============================================================
+# Creación del índice modificado de democracia electoral (opcional).
+#
+# Este script toma los indicadores ajustados del paso anterior y reconstruye
+# el índice de democracia electoral siguiendo la metodología de V-Dem.
+#
+# NOTA: Una vez generado este índice, se debe correr crear_base.R
+#       utilizando esta salida como insumo.
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(ggplot2)
@@ -84,5 +93,6 @@ print(outliers)
 
 
 write.csv(polyarchy_df, "polyarchy_replica.csv", row.names = FALSE)
+
 
 
