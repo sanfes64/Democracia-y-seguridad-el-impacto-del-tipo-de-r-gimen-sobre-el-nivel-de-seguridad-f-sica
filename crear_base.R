@@ -1,5 +1,5 @@
 # Creación de la base de datos. 
-# En caso de utilizar los índices creados por MCMC puede omitirse la sección inicial de depurado de la base de V-Dem 
+# En caso de utilizar los índices creados por MCMC se debe remplazar la importación de V-Dem por el output de polyarchy_rep
 # Librerias necesarias
 library(dplyr)
 library(summarytools)
@@ -106,4 +106,5 @@ attr(vdem_ihme$deaths, "label") <- "% cada 100.000 habitantes"
 attr(vdem_ihme$incidence, "label") <- "% cada 100.000 habitantes"
 
 # Se guarda la base
+
 write.csv(vdem_ihme, "vdem_ihme.csv", row.names = FALSE)
