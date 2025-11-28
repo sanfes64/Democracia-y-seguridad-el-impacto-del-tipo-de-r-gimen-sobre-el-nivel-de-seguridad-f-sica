@@ -1,4 +1,14 @@
-# Creación de índices utilizando MCMC.
+# ============================================================
+# Replicación de índices mediante MCMC (opcional).
+#
+# Este script implementa un modelo de cadenas de Markov para replicar
+# los índices de V-Dem y permitir la eliminación de indicadores considerados
+# problemáticos para el análisis.
+#
+# Este paso es intensivo en memoria y se recomienda limpieza de caché y 
+# reiniciar la sesion de R luego de correr el código.
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(summarytools)
@@ -174,3 +184,4 @@ df_results <- df_filtered %>%
 
 # Se exportan los resultados
 write.csv(df_results, "assoc.csv", row.names = FALSE)
+
