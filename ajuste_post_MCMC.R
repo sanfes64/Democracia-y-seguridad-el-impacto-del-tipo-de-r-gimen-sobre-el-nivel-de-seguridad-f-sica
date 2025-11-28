@@ -1,5 +1,14 @@
-# Ajuste de los resultados de MCMC.
-# En este caso se utiliza el índice de elecciones limpias, pero es intercambiable por cualquiera de los 3 índices replicados y adaptados
+# ============================================================
+# Ajuste y evaluación de los resultados del MCMC (opcional).
+#
+# Este script toma los resultados generados por MCMC.R y realiza ajustes
+# adicionales para corregir sesgos estructurales. Aunque aquí se muestra el
+# proceso utilizando el índice de Elecciones Limpias, es intercambiable con
+# cualquiera de los índices replicados y adaptados.
+#
+# Produce indicadores ajustados listos para su agregación posterior.
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(zoo)
@@ -498,3 +507,4 @@ vdem_clean_final <- vdem_clean_final %>% rename(
 )
 
 write.csv(vdem_clean_final, "vdem_clean_final.csv", row.names = FALSE)
+
