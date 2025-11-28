@@ -1,4 +1,15 @@
-# Variables de control
+# ============================================================
+# Adición y formateo de variables de control.
+#
+# Este script agrega al panel las variables de control utilizadas en el análisis,
+# incluyendo la incorporación de datos del WEO (FMI) y del World Bank entre otros.
+# También crea las etiquetas y realiza las transformaciones necesarias.
+#
+# Este archivo llama automáticamente a:
+#   - variable_weo.R
+#   - variable_wb.R
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(summarytools)
@@ -167,3 +178,4 @@ vdem_ihme <- vdem_ihme %>%
 
 # Se guarda la base
 write.csv(vdem_ihme, "vdem_ihme.csv", row.names = FALSE)
+
