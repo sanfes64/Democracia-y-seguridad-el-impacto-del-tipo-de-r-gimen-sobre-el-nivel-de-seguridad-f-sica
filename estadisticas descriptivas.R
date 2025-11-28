@@ -1,4 +1,13 @@
-# Análisis de estadísticas descriptivas univariadas y bivariadas
+# ============================================================
+# Estadísticas descriptivas univariadas y bivariadas.
+#
+# Este script genera las exportaciones y tablas de LaTex de las estadísticas descriptivas univariadas y bivariadas.
+#
+# Se incluye un análisis de posibles outliers.
+#
+# Algunas de las tablas fueron modificadas posteriormente en TexStudio para mejorar el formato y la legibilidad, pero no se modificó el contenido sustantivo.
+# ============================================================
+
 # Librerias necesarias
 library(dplyr)
 library(haven)
@@ -477,3 +486,4 @@ stargazer(table_out, type = "latex", summary = FALSE, rownames = FALSE,
           label = "tab:outliers",
           font.size = "scriptsize",
           header = FALSE)
+
