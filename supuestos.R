@@ -1,5 +1,15 @@
-# Analisis de los supuestos del modelo de Dif in DIf.
-# Cada sección está pensada para ser un test independiente.
+# ============================================================
+# Análisis de los supuestos del modelo de Diferencias en Diferencias.
+#
+# Este script evalúa los cuatro supuestos clave del modelo DiD:
+#   1) Modelo estático
+#   2) Constante de Lipschitz
+#   3) Existencia de cuasi-stayers
+#   4) Tendencias paralelas
+#
+# Cada sección está pensada para correrse de manera independiente.
+# ============================================================
+
 # Librerias necesarias
 library(lmtest)
 library(sandwich)
@@ -420,4 +430,5 @@ modelsummary(
   notes = "Se considera quasi-stayer si el cambio en democracia absoluta es menor a 0.01.",
   escape = FALSE
 )
+
 
