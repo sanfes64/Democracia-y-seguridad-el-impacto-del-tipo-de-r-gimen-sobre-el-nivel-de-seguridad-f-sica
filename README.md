@@ -63,15 +63,20 @@ Durante la replicación, el usuario debe realizar:
 Cada script indica en comentarios dónde intervenir.
 ________________________________________
 4. Descripción de los scripts
-01_crear_base.R
+
+- 01_crear_base.R
 Construye la base principal integrando V-Dem y GBD. Debe modificarse si se utiliza el camino B.
-02_var_control.R
+
+- 02_var_control.R
 Agrega y formatea las variables de control. Llama automáticamente a variable_weo.R y variable_wb.R.
-03_estadisticas_descriptivas.R
+
+- 03_estadisticas_descriptivas.R
 Genera estadísticas descriptivas univariadas y bivariadas, además de identificar outliers.
-04_supuestos_DiD.R
+
+- 04_supuestos_DiD.R
 Evalúa cada uno de los cuatro supuestos del modelo de Diferencias en Diferencias.
-05_modelos.R
+
+- 05_modelos.R
 Ejecuta los modelos OLS y Dif-in-Dif y exporta los resultados en tablas y gráficos.
 ________________________________________
 Scripts opcionales
@@ -80,4 +85,5 @@ Scripts opcionales
 - A3_polyarchy_rep.R – Reconstruye el índice de democracia electoral a partir de los nuevos índices creados.
 ________________________________________
 5. Cita sugerida
+6. 
 Festa, S. (2025). Democracia y seguridad: el impacto del tipo de régimen sobre el nivel de seguridad física. Universidad Torcuato Di Tella.
