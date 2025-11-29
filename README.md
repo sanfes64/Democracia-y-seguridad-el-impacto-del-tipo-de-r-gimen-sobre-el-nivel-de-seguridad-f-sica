@@ -33,8 +33,6 @@ ________________________________________
     diccionario_variables.pdf
     notas_metodologicas.pdf
     session_info.txt
-
-
 ________________________________________
 2. Caminos posibles del análisis
 El proyecto puede reproducirse de dos formas distintas:
