@@ -65,9 +65,9 @@ ________________________________________
    
 Durante la replicación, el usuario debe realizar:
 
-•	Decisión sobre el uso de índices originales o replicados,
-•	Modificación de los indicadores utilizados
-•	Evaluación de los supuestos del modelo de diferencias en diferencias
+- Decisión sobre el uso de índices originales o replicados,
+- Modificación de los indicadores utilizados
+- Evaluación de los supuestos del modelo de diferencias en diferencias
 
 Cada script indica en comentarios dónde intervenir.
 ________________________________________
