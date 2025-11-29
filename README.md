@@ -11,14 +11,14 @@ ________________________________________
 /code/
     01_crear_base.R
     02_var_control.R
+    variable_weo.R
+    variable_wb.R
     03_estadisticas_descriptivas.R
     04_supuestos_DiD.R
     05_modelos.R
     A1_MCMC.R
     A2_ajuste_post_MCMC.R
     A3_polyarchy_rep.R
-    variable_weo.R
-    variable_wb.R
 
 /data/
     raw/
@@ -33,6 +33,7 @@ ________________________________________
     diccionario_variables.pdf
     notas_metodologicas.pdf
     session_info.txt
+
 ________________________________________
 2. Caminos posibles del análisis
 El proyecto puede reproducirse de dos formas distintas:
