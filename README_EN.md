@@ -1,4 +1,5 @@
-#README — Replication Package
+# README — Paquete de Replicación
+________________________________________
 
 Democracy and Security: The Impact of Regime Type on the Level of Physical Security
 
