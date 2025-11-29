@@ -8,8 +8,9 @@ El paquete de replicación incluye los códigos para crear la base de datos, cre
 Los códigos están escritos en R y deben ejecutarse manualmente, ya que varios pasos requieren revisión por parte del usuario. Esto incluye tanto un análisis con los índices originales de V-Dem como una reconstrucción alternativa del índice de democracia electoral para evitar problemas de circularidad conceptual
 ________________________________________
 1. Estructura del repositorio
+
 /code/
-    &nbsp; 01_crear_base.R
+    01_crear_base.R
     02_var_control.R
     variable_weo.R
     variable_wb.R
