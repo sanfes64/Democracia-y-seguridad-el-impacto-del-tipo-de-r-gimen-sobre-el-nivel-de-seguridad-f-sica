@@ -2,10 +2,14 @@
 Democracia y seguridad: el impacto del tipo de régimen sobre el nivel de seguridad física
 
 Este repositorio contiene el paquete de replicación completo de la tesis de grado
+
 “Democracia y seguridad: el impacto del tipo de régimen sobre el nivel de seguridad física”, realizada en la Universidad Torcuato Di Tella por Santiago Festa, con Carlos Gervasoni como tutor.
+
 El objetivo del trabajo es evaluar cómo un aumento en el nivel de la democracia puede generar un aumento en el nivel de seguridad física. Para esto se utilizan datos de V-Dem, GBD, WB, PNUD y WEO entre otras.
 El paquete de replicación incluye los códigos para crear la base de datos, crear índices de democracia electoral utilizando indicadores de V-Dem, analizar las estadísticas descriptivas univariadas y bivariadas, analizar los supuestos del modelo de diferencias en diferencias (Dif-in-Dif) y realizar los modelos de OLS y Dif-in-Dif.
+
 Los códigos están escritos en R y deben ejecutarse manualmente, ya que varios pasos requieren revisión por parte del usuario. Esto incluye tanto un análisis con los índices originales de V-Dem como una reconstrucción alternativa del índice de democracia electoral para evitar problemas de circularidad conceptual
+
 ________________________________________
 1. Estructura del repositorio
 
@@ -45,6 +49,7 @@ Utiliza los índices originales de V-Dem. Este camino se incluye para preservar 
 ________________________________________
 B) Camino de modificación del índice de democracia electoral mediante MCMC
 Utiliza MCMC para replicar los sub-índices que componen el índice de democracia electoral. Este camino adicional surge porque algunos indicadores incluidos por V-Dem en la construcción del índice de democracia electoral están conceptualmente relacionados con fenómenos de seguridad física, lo que puede generar problemas de tautología en los modelos. Los resultados presentados en el trabajo son obtenidos siguiendo este proceso:
+
 1.	A1_MCMC.R
 2.	A2_ajuste_post_MCMC.R
 3.	A3_polyarchy_rep.R
@@ -53,6 +58,7 @@ Utiliza MCMC para replicar los sub-índices que componen el índice de democraci
 6.	03_estadisticas_descriptivas.R
 7.	04_supuestos_DiD.R
 8.	05_modelos.R
+   
 Este proceso es más intensivo en tiempo y memoria, especialmente MCMC.R puede generar problemas de saturación del caché y colapsar la sesión de R.
 ________________________________________
 3. Intervenciones manuales necesarias
