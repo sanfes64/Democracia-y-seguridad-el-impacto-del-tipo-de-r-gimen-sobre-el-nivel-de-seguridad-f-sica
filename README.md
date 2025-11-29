@@ -65,18 +65,23 @@ ________________________________________
 4. Descripción de los scripts
 
 - 01_crear_base.R
+  
 Construye la base principal integrando V-Dem y GBD. Debe modificarse si se utiliza el camino B.
 
 - 02_var_control.R
+  
 Agrega y formatea las variables de control. Llama automáticamente a variable_weo.R y variable_wb.R.
 
 - 03_estadisticas_descriptivas.R
+  
 Genera estadísticas descriptivas univariadas y bivariadas, además de identificar outliers.
 
 - 04_supuestos_DiD.R
+  
 Evalúa cada uno de los cuatro supuestos del modelo de Diferencias en Diferencias.
 
 - 05_modelos.R
+  
 Ejecuta los modelos OLS y Dif-in-Dif y exporta los resultados en tablas y gráficos.
 ________________________________________
 Scripts opcionales
