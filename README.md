@@ -9,30 +9,30 @@ Los códigos están escritos en R y deben ejecutarse manualmente, ya que varios 
 ________________________________________
 1. Estructura del repositorio
 /code/
-\t01_crear_base.R
-\t02_var_control.R
-\tvariable_weo.R
-\tvariable_wb.R
-\t03_estadisticas_descriptivas.R
-\t04_supuestos_DiD.R
-\t05_modelos.R
-\tA1_MCMC.R
-\tA2_ajuste_post_MCMC.R
-\tA3_polyarchy_rep.R
+    &nbsp; 01_crear_base.R
+    02_var_control.R
+    variable_weo.R
+    variable_wb.R
+    03_estadisticas_descriptivas.R
+    04_supuestos_DiD.R
+    05_modelos.R
+    A1_MCMC.R
+    A2_ajuste_post_MCMC.R
+    A3_polyarchy_rep.R
 
 /data/
-\traw/
-\tprocessed/
+    raw/
+    processed/
 
 /output/
-\tdescriptivas/
-\tsupuestos/
-\tmodelos/
+    descriptivas/
+    supuestos/
+    modelos/
 
 /documentation/
-\tdiccionario_variables.pdf
-\tnotas_metodologicas.pdf
-\tsession_info.txt
+    diccionario_variables.pdf
+    notas_metodologicas.pdf
+    session_info.txt
 ________________________________________
 2. Caminos posibles del análisis
 El proyecto puede reproducirse de dos formas distintas:
