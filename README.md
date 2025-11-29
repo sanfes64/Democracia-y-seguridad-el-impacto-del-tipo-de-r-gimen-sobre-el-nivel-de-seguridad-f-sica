@@ -75,9 +75,9 @@ Evalúa cada uno de los cuatro supuestos del modelo de Diferencias en Diferencia
 Ejecuta los modelos OLS y Dif-in-Dif y exporta los resultados en tablas y gráficos.
 ________________________________________
 Scripts opcionales
-•	A1_MCMC.R – Replica los índices de V-Dem utilizando cadenas de Montecarlo Markov.
-•	A2_ajuste_post_MCMC.R – Ajusta los índices y evalúa su calidad.
-•	A3_polyarchy_rep.R – Reconstruye el índice de democracia electoral a partir de los nuevos índices creados.
+- A1_MCMC.R – Replica los índices de V-Dem utilizando cadenas de Montecarlo Markov.
+- A2_ajuste_post_MCMC.R – Ajusta los índices y evalúa su calidad.
+- A3_polyarchy_rep.R – Reconstruye el índice de democracia electoral a partir de los nuevos índices creados.
 ________________________________________
 5. Cita sugerida
 Festa, S. (2025). Democracia y seguridad: el impacto del tipo de régimen sobre el nivel de seguridad física. Universidad Torcuato Di Tella.
