@@ -56,10 +56,13 @@ Utiliza MCMC para replicar los sub-índices que componen el índice de democraci
 Este proceso es más intensivo en tiempo y memoria, especialmente MCMC.R puede generar problemas de saturación del caché y colapsar la sesión de R.
 ________________________________________
 3. Intervenciones manuales necesarias
+   
 Durante la replicación, el usuario debe realizar:
+
 •	Decisión sobre el uso de índices originales o replicados,
 •	Modificación de los indicadores utilizados
 •	Evaluación de los supuestos del modelo de diferencias en diferencias
+
 Cada script indica en comentarios dónde intervenir.
 ________________________________________
 4. Descripción de los scripts
@@ -85,10 +88,17 @@ Evalúa cada uno de los cuatro supuestos del modelo de Diferencias en Diferencia
 Ejecuta los modelos OLS y Dif-in-Dif y exporta los resultados en tablas y gráficos.
 ________________________________________
 Scripts opcionales
-- A1_MCMC.R – Replica los índices de V-Dem utilizando cadenas de Montecarlo Markov.
-- A2_ajuste_post_MCMC.R – Ajusta los índices y evalúa su calidad.
-- A3_polyarchy_rep.R – Reconstruye el índice de democracia electoral a partir de los nuevos índices creados.
+- A1_MCMC.R
+
+Replica los índices de V-Dem utilizando cadenas de Montecarlo Markov.
+
+- A2_ajuste_post_MCMC.R
+
+Ajusta los índices y evalúa su calidad.
+- A3_polyarchy_rep.R
+
+Reconstruye el índice de democracia electoral a partir de los nuevos índices creados.
 ________________________________________
 5. Cita sugerida
-6. 
+   
 Festa, S. (2025). Democracia y seguridad: el impacto del tipo de régimen sobre el nivel de seguridad física. Universidad Torcuato Di Tella.
